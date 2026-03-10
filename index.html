@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width-device-width, initial-scale=1.0">
+    <title>NYONDO FORM</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .A{
+        background-color: azure;
+        height: 100vh;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    .content{
+        display: flex;
+
+    }
+    .sidebar{
+        border-right: 1px  solid;
+        text-align: none;
+        flex: 1;
+    }
+    .card{
+        flex-direction: row;
+    }
+
+    .sales{
+        display: flex;
+        flex-direction: row;
+    }
+    .section{
+        display:flex;
+        flex-direction: row;
+    }
+  </style> 
+<body>
+    <div class="A"> <!--this is the container where i have my sidebar and content-->
+        <div class="sidebar"><!--sidebar-->
+            <a href="index.html">About Nyondo</a><br><br>
+            <a href="supplierrgistration.html">Supplier Form</a><br><br>
+            <a href="dashbord.html">Dashboard</a>
+        </div>
+        <div class="content"><!--content-->
+            <form action="">
+                <section class="card"><!--my first section-->
+            <h1>Sales Registration Form</h1>
+                    <div class="sales"><!--my sales date container-->
+                        <label form="Sales Date">Sales Date</label><br>
+                        <input type="date">
+                    </div>
+                    <div class="sales person">
+                        <label form="Sales personnel"> Sales person</label>
+                        <select name=""id="">
+                            <option value=""disabled selected>Sales Personnel</option>
+                            <option value="1">Zziwa Eve Kobusingye</option>
+                            <option value="2">Ruyondo Mathew</option>
+                        </select>
+                     </div>
+                </section>
+                <section><!--my customer detail section-->
+                    <h2>customer details</h2>
+                    <div class="cus name">
+                        <label form="name">Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="cus phone">
+                        <label form="phone number">Phone Number</label>
+                        <input type="numbers">
+                    </div>
+                    <div class="cus email ">
+                        <label form="email">Email</label>
+                        <input type="email">
+                    </div>
+                    <div class="cus type">
+                        <label form="customer type">customer type</label>
+                        <select name=""id="">
+                            <option value=""disabled selected>select person</option>
+                            <option value="wholesale customer">wholesale customer</option>
+                            <option value="new customer">new customer</option>
+                        </select>
+                    </div>
+                </section>
+                <section><!--my third section-->
+                    <h2>items</h2>
+                    <div class="pdt">
+                        <label form="pdt id">pdt id</label>
+                        <input type="number">
+                    </div>
+                    <div class="quantity">
+                        <label form="quantity">Quantity</label>
+                        <input type="number">
+                    </div>
+                    <div class="unit">
+                        <label form="unit price">Unit price</label>
+                        <input type="number">
+                    </div><br><br>
+                    <div class="pdt">
+                        <label form="pdt id">pdt id</label>
+                        <input type="number">
+                    </div>
+                    <div class="quantity">
+                        <label form="quantity">Quantity</label>
+                        <input type="number">
+                    </div>
+                    <div class="unit">
+                        <label form="unit price">Unit price</label>
+                        <input type="number">
+                    </div>
+
+                </section>   
+            </form>
+    </div>
+        
+</body>  
+
+
