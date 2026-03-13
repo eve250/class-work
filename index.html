@@ -21,42 +21,66 @@
 
     .content {
         flex: 3;
+        justify-content: center;
+        align-items: center;
+        height: auto;
 
     }
 
     .sidebar {
         display: block;
-        flex: 1;
-        margin-bottom: 10px;
         text-decoration: none;
+
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        padding: 12px;
     }
 
     .form {
         background-color: white;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-left: 100px;
+        margin-right: 0%;
+        margin-top: 10px;
+        margin-bottom: 0%;
+
+        border-radius: 6px;
+        width: auto;
+        align-items: center;
+
     }
 
-    h2{
+    h2 {
         text-align: justify;
     }
 
     .row {
         display: flex;
-        gap: 20px;
-        justify-content:flex-start;
+        gap: 70px;
+
 
     }
 
-    .column {
+    .select {
+        padding: 60px;
+
+    }
+
+    .column input {
         display: flex;
         flex-direction: column;
-
+        padding: 10px;
+        font: size 16px;
     }
 
-    .button {
-        
+    .buttons {
+
         display: flex;
-        justify-content: space-between;
+        gap: 40px;
+
+        margin-top: 20px;
 
     }
 </style>
@@ -64,9 +88,9 @@
 <body>
     <div class="A"> <!--this is the container where i have my sidebar and content-->
         <div class="sidebar"><!--sidebar-->
-            <a href="index.html">About Nyondo</a><br><br>
-            <a href="supplierrgistration.html">Supplier Form</a><br><br>
-            <a href="dashbord.html">Dashboard</a>
+            <a href="#">About Nyondo</a><br><br><br>
+            <a href="#">Supplier Form</a><br><br><br>
+            <a href="#">Dashboard</a><br>
         </div>
         <div class="content"><!--content-->
             <form class="form">
@@ -78,7 +102,7 @@
                     </div>
 
                     <div class="column">
-                        <label form="Sales personnel"> Sales person</label>
+                        <label form="Sales personnel"> Sales person</label><br>
                         <select name="" id="">
                             <option value="" disabled selected>Sales Personnel</option>
                             <option value="1">Zziwa Eve Kobusingye</option>
@@ -88,7 +112,6 @@
                 </div>
                 <h2>customer details</h2>
                 <div class="row">
-
                     <div class="column">
                         <label form="name">Name</label><br>
                         <input type="text">
@@ -97,21 +120,23 @@
                         <label form="phone number">Phone Number</label><br>
                         <input type="numbers">
                     </div><br>
-                    <div class="row">
-                        <div class="column">
-                            <label form="email">Email</label><br>
-                            <input type="email">
-                        </div>
-                        <div class="column">
-                            <label form="customer type">customer type</label><br>
-                            <select name="" id="">
-                                <option value="" disabled selected>select person</option>
-                                <option value="wholesale customer">wholesale customer</option>
-                                <option value="new customer">new customer</option>
-                            </select>
-                        </div>
+
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label form="email">Email</label><br>
+                        <input type="email">
+                    </div>
+                    <div class="column">
+                        <label form="customer type">customer type</label><br>
+                        <select name="" id="" class="customertype">
+                            <option value="" disabled selected>select person</option>
+                            <option value="wholesale customer">wholesale customer</option>
+                            <option value="new customer">new customer</option>
+                        </select>
                     </div>
                 </div>
+
                 <h2>items</h2>
                 <div class="row"><!--section for items-->
                     <div class="column">
@@ -126,26 +151,28 @@
                         <label form="unit price">Unit price</label><br>
                         <input type="number">
                     </div><br><br><br>
-                    <div class="row">
-                        <div class="column">
-                            <label form="pdt id">pdt id</label><br>
-                            <input type="number">
-                        </div>
-                        <div class="column">
-                            <label form="quantity">Quantity</label><br>
-                            <input type="number">
-                        </div>
-                        <div class="column">
-                            <label form="unit price">Unit price</label><br>
-                            <input type="number">
-                        </div>
-                    </div>
-<br><br>
 
-                    <div class="buttons">
-                        <button type="submit">Submit</button>
-                        <button type="reset">cancel</button>
+                    <br><br>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label form="pdt id">pdt id</label><br>
+                        <input type="number">
                     </div>
+                    <div class="column">
+                        <label form="quantity">Quantity</label><br>
+                        <input type="number">
+                    </div>
+                    <div class="column">
+                        <label form="unit price">Unit price</label><br>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">cancel</button>
+                </div>
 
             </form>
         </div>
